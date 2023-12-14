@@ -33,7 +33,8 @@ allprojects {
 
 ```
 dependencies {
-    implementation 'com.github.SmartToolFactory:Compose-BeforeAfter:<version>'
+    //implementation 'com.github.SmartToolFactory:Compose-BeforeAfter:<version>'
+    implementation 'com.github.akardas16:Compose-BeforeAfter:1.0.0'
 }
 ```
 
