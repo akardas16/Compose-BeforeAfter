@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
@@ -88,6 +89,9 @@ fun BeforeAfterImageDemo() {
                 .aspectRatio(4 / 3f),
             beforeImage = imageBefore,
             afterImage = imageAfter,
+            overlayStyle = OverlayStyle(dividerBrush = Brush.verticalGradient(listOf(Color.Red,
+                Color.Blue
+            )), dividerWidth = 4.dp),
             contentScale = contentScale
         )
 
